@@ -1,0 +1,342 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.error, .message {
+	width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message {
+    background-color: darkblue;
+}
+.error {
+	background-color: red;
+}
+.error p, .message p {
+	font-size: 20px;
+} 
+
+header {
+	width: 100%;
+	height: 80px;
+	color: white;
+	text-align: center;
+	background-color: #2A7C59;
+}
+header .inici {
+	padding-top: 18px;
+	cursor: pointer;
+	width: 80%;
+	margin-left: 100px;
+}
+header a:not(.inici){
+	float: right;
+	cursor: pointer;
+	padding-right: 2%;
+	text-decoration: none;
+	color: white;
+	border-right: 2px solid white;
+	padding-left: 5px;
+}/*
+header a:not(.account):-child{
+	border-right: none;
+}*/
+header a:not(.log-out):first-child{
+	border-right: none;
+}
+.register {
+	border-right: 2px solid white;
+}
+.foto_logo {
+	width: 30%;
+	margin-top: 12px;
+}
+
+.menu_usuari {
+	width: 31%;
+	float: right;
+	margin-top: 50px;
+}
+
+header .menu_usuari a div {
+	width: 25px;
+    height: 25px;
+    display: flex;
+    border-radius: 50%;
+    background-color: #68B0AB;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-left: 6px;
+    margin-top: -4px; 
+    font-weight: bold;
+}
+
+.text_inici {
+	width: 40%;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 30%;
+}
+.account_info {
+	display: none;
+	background-color: red;
+}
+
+.menu .cat-menu {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	flex-flow: row nowrap;
+	text-transform: uppercase;
+}
+.menu .cat-menu .categories {
+	background: #68B0AB;
+	float: left;
+	flex: 1;
+	text-align: center;
+	padding: 15px 20px;
+	cursor: pointer;
+	list-style: none;
+	border-right: 1px solid grey;
+}
+.menu .cat-menu .categories:last-child {
+	border-right: none;
+}
+
+.main {
+	width: 100%;
+}
+.main .menu_marcas {
+	width: 15%;
+	min-width: 150px;
+}
+.main .menu_marcas .llista_marcas {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-flow: column nowrap;
+	list-style: none;
+	text-align: center;
+	background-color: #C8D5B9;
+	padding: 15%;
+	float: left;
+	cursor: pointer;
+}
+
+.main .llista_marcas .marcas {
+	width: 100%;
+	height: 80%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid grey;
+}
+.main .llista_marcas .marcas:last-child {
+	border-bottom: none;
+}
+
+.product_list {
+	width: 80%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.productes {
+	padding: 1%;
+	width: 30%;
+	float: left;
+	text-align: center;
+	border: 1px solid grey;
+	border-radius: 15px;
+	box-shadow: 3px 3px lightgrey;
+	margin: 5px;
+}
+.productes .vec {
+	position:relative;
+}
+section .productes img {
+	width: 200px;
+	height: 140px;
+	cursor: pointer;
+}
+section .productes .descripcio {
+	font-size: 12px;
+	max-width: 55%;
+	margin-left: 23%;
+	color: grey;
+}
+section .productes .af{
+    margin-left: 34%;
+    margin-top: 3%;
+    font-size: 12px;
+    color: blue;
+}
+section .productes .afegir {
+    width: 12%;
+    font-size: 18px;
+}
+
+.main .registro, .entrar, .admin, .dades_usuari {
+	width: 25%;
+	margin-left: 37.5%;
+	margin-top: 8%;
+	padding: 2%;
+	text-align: center;
+	background-color: #68B0AB;
+}
+.main .registro input, .entrar input, .admin input, .dades_usuari input{
+	padding: 1%;
+	border-bottom: 2px;
+}
+.tlf{
+	width:170px;
+}
+
+.product_details {
+	width: 70%;
+	text-align: center;
+	margin-left: 15%;
+}
+.product_details .img_details img {
+	width: 100%;
+}
+.product_details .text_details .title {
+	font-size: 25px;
+}
+.product_details .text_details .price {
+	font-size: 22px;
+}
+.product_details .text_details .descripcio {
+	font-size: 14px;
+	color: grey;
+}
+.product_details .text_details button {
+	margin-top: 5%;
+	font-size: 20px;
+	float:right;
+	padding: 1%;
+}
+
+.carrito {
+	width: 50%;
+	margin: 5px auto;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: 10px;
+}
+.carrito .tots_productes{
+	width: 90%;
+	display: flex;
+	flex-flow: column nowrap;
+	border: 1px solid grey;
+	border-radius: 6px;
+	padding: 10px;
+}
+.carrito .tots_productes .producte_carrito {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid grey;
+	border-radius: 6px;
+	margin: 5px 0;
+	position: relative;
+
+}
+.carrito .tots_productes .producte_carrito img {
+	width: 180px;
+	height: 100px;
+  cursor: pointer;
+}
+
+.carrito .total {
+	width: 90%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid grey;
+	border-radius: 6px;
+	padding: 20px 10px;
+	margin-top: 20px;
+}
+.carrito .borrar {
+	position: absolute;
+	top: 3px;
+	right: 5px;
+	font-weight: bold;
+	color: red;
+	cursor: pointer;
+}
+.preu {color:grey;}
+
+.alta_producte {
+	width: 60%;
+	margin: 5px auto;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: 10px;
+}
+
+.form_alta {
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 3%;
+	background-color: #68B0AB;
+}
+.form_alta input, select, textarea {
+	padding: 1%;
+}
+.submit {
+	float: right;
+	width: 25%;
+}
+.submit1 {
+	padding: 1%;
+}
+
+.buscador {
+    width: 22%;
+    float: left;
+    margin-top: 56px;
+    margin-left: 10px;	
+}
+.buscador p {
+	float: left;
+	cursor: pointer;
+}
+.buscador input {
+	float: right;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	font-size: 18px;	
+	display: none;
+	color: white;
+}
+
+.background {
+	background-image: url("https://imagizer.imageshack.us/v2/1366x656q90/921/8DkQsU.jpg");
+	//background-image: url("https://www.tesla.com/sites/default/files/images/homepage/homepage-hero@2x.jpg?20170105");
+	background-size: cover; 
+	height: 748px;
+	background-position: center;
+	background-repeat: no-repeat; 
+	text-shadow: 3px 3px grey;
+}
+
+.background p{
+	font-size: 35px;
+	color: white;
+	padding-top: 70px;
+}
+
+.titol_prod {font-weight: bold}
